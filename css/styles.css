@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --team-background: #F5F4FA;
     --accent-background: #2F303A;
+    --icon-color: #AFB1B8;
 }
 /* Global styles */
 html {
@@ -270,17 +271,17 @@ body {
     line-height: 1.19;
 }
 .team-socials {
-    display: flex;
+    display: inline-flex;
     margin-top: 16px;
     margin-left: 32px;
     margin-right: 32px;
     gap: 10px;
-    outline: 1px solid green;
 }
 .team-social-link {
     display: inline-flex;
     width:44px;
     height:44px;
+    padding:12px;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -288,17 +289,6 @@ body {
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--accent-color);
-}
-.social-icon-team {
-    fill:#AFB1B8;
-    width: 20px;
-    height: 20px;
-    margin-left:12px;
-    margin-top:12px;
-}
-.social-icon-team:hover,
-.social-icon-team:focus {
-    fill:#fff;
 }
 
 /* Partners styles  */
@@ -454,12 +444,32 @@ body {
     font-weight: 400;
 }
 
-.svg {
-    outline: 1px solid green;
+.icon-client {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-color);
 }
-.icon {
-    fill: #000;
+.icon-client:hover,
+.icon-client:focus {
+    fill: var(--accent-color);
 }
-.icon:hover {
-    fill: tomato;
+.icon-1 {
+    margin-right: 10px;
+    fill: var(--primary-text-color);
+}
+.icon-1:hover {
+    fill: var(--accent-color);
+}
+.icon-social-team {
+    outline: 1px solid #red;
+    width:20px;
+    height:20px;
+    fill: #afb1b8;
+}
+.icon-social-team:hover,
+.icon-social-team:focus {
+    width:20px;
+    height:20px;
+    padding:12px;
+    fill: #fff;
 }
