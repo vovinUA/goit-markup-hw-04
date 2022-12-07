@@ -214,7 +214,7 @@ body {
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left:100px;
-    padding-right:100px;d 
+    padding-right:100px;
 }
 .list-title {
     color: var(--title-text-color);
@@ -445,6 +445,7 @@ body {
 }
 
 .icon-client {
+    display: inline-block;
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
@@ -454,22 +455,24 @@ body {
     fill: var(--accent-color);
 }
 .icon-1 {
+    display: inline-block;
     margin-right: 10px;
+}
+.svg-hover-1 {
     fill: var(--primary-text-color);
 }
-.icon-1:hover {
+.svg-hover-1:hover {
     fill: var(--accent-color);
+
 }
 .icon-social-team {
-    outline: 1px solid #red;
     width:20px;
     height:20px;
-    fill: #afb1b8;
 }
-.icon-social-team:hover,
-.icon-social-team:focus {
-    width:20px;
-    height:20px;
-    padding:12px;
+.svg-hover-2 {
+    fill: #AFB1B8;
+}
+.svg-hover-2:hover,
+.svg-hover-2:focus {
     fill: #fff;
 }
