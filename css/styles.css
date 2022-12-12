@@ -60,8 +60,7 @@ body {
 
 .section-team {
     padding-top: 0px;
-    padding-bottom: 0px;
-    
+    padding-bottom: 0px;  
 }
 
 /* Header styles */
@@ -112,10 +111,6 @@ body {
 .nav-item:hover,
 .nav-item:focus {
     color: var(--accent-color);
-    border-style: none;
-    border-width: 5px;
-    border-color: var(--accent-color);
-    border-bottom-style: solid;
 }
 .current {
     color: var(--accent-color);
@@ -448,6 +443,14 @@ body {
     font-weight: 400;
 }
 /* Icons */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
 .icon-client {
     display: inline-block;
     width: 106px;
@@ -467,9 +470,9 @@ body {
 }
 .svg-hover-1:hover {
     fill: var(--accent-color);
-
 }
 .icon-social-team {
+    display: inline-block;
     width:20px;
     height:20px;
 }
