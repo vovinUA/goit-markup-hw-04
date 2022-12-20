@@ -141,7 +141,7 @@ body {
 .hero {
     background-color: var(--accent-background);
     background-image: url("../images/hero-bg.jpg");
-    background: linear-gradient (to right, rgba(0,0,0,0.4),  rgba(0,0,0,0.4));
+    background: linear-gradient (to right, rgba(0,0,0,0.4),  rgba(0,0,0,0.4)), ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -202,17 +202,15 @@ body {
     padding-bottom:0px;
 }
 .list-icon-block {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 120px;
     background-color: var(--team-background);
     margin-bottom: 30px;
     border-radius: 4px;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left:100px;
-    padding-right:100px;
 }
 .list-title {
     color: var(--title-text-color);
@@ -277,17 +275,20 @@ body {
     gap: 10px;
 }
 .team-social-link {
-    display: inline-flex;
-    width:44px;
-    height:44px;
-    padding:12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     background-color: transparent;
+    fill: #AFB1B8;
     cursor: pointer;
 }
 .team-social-link:hover,
 .team-social-link:focus {
     background-color: var(--accent-color);
+    fill: #fff;
 }
 
 /* Clients styles  */
@@ -296,18 +297,19 @@ body {
     gap: 30px;
     align-items: center;
 }
-.client {
+.client-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
     width: 170px;
     height: 92px;
+    fill: #AFB1B8;
 }
-.client-item {
-    padding: 16px 32px;
-    background-color: transparent;
-    display: inline-flex;
-    border-radius: 4px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #AFB1B8;
+.client-item:hover,
+.client-item:focus {
+    border: 1px solid var(--accent-color);
 }
 /* Portfolio styles */
 
@@ -352,11 +354,10 @@ body {
     color: #fff;
 }
 .portfolio-card {
-    display: inline-block;
+    display: block;
 }
 .portfolio-card:hover,
 .portfolio-card:focus {
-    display: inline-block;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
                 0 1px 1px rgba(0, 0, 0, 0.14),
                 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -405,14 +406,15 @@ body {
     gap: 10px;
 }
 .footer-social-item {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 12px;
+    fill: #fff;
+
 }
 .footer-social-item:hover, 
 .footer-social-item:focus {
@@ -452,7 +454,7 @@ body {
     fill: currentColor;
   }
 .icon-client {
-    display: inline-block;
+    display: block;
     width: 106px;
     height: 60px;
     fill: var(--icon-color);
@@ -462,7 +464,7 @@ body {
     fill: var(--accent-color);
 }
 .icon-1 {
-    display: inline-block;
+    display: block;
     margin-right: 10px;
 }
 .svg-hover-1 {
@@ -472,14 +474,9 @@ body {
     fill: var(--accent-color);
 }
 .icon-social-team {
-    display: inline-block;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
 }
-.svg-hover-2 {
-    fill: #AFB1B8;
-}
-.svg-hover-2:hover,
-.svg-hover-2:focus {
-    fill: #fff;
+.uppercase {
+    text-transform: uppercase;
 }
